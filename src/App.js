@@ -1,10 +1,12 @@
 import React from 'react';
+import Navbar from './components/layout/Navbar'
 import './App.css';
+import Footer from './components/layout/Footer';
 
 function App() {
   return (
     <div className="App">
-      <h1>Hello World</h1>
+      <Navbar />
     </div>
   );
 }
