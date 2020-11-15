@@ -1,14 +1,16 @@
-import React from 'react';
+import React, { Fragment } from 'react';
+import { BrowserRouter, Router, Route, Switch } from "react-router-dom";
 import Navbar from './components/layout/Navbar'
 import './App.css';
 import Footer from './components/layout/Footer';
 
-function App() {
-  return (
-    <div className="App">
+const App = () => {
+  return(
+    <Fragment>
       <Navbar />
-    </div>
-  );
+      <Footer />
+    </Fragment>
+  )
 }
 
 export default App;
