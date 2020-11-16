@@ -33,7 +33,7 @@ const Landing = () => {
                <h3>
                   Contact Me
                </h3>
-               <p>Click here to contact me</p>
+               <p>Click here to contact</p>
             </div>
            </div>
         </div>
