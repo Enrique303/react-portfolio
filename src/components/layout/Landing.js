@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 
 const Landing = () => {
    return(
@@ -17,7 +18,7 @@ const Landing = () => {
                <h3>
                   About Me
                </h3>
-               <p>If you are interested in learning about me click here!</p>
+               <Link to = '/about'><p>If you are interested in learning about me click here!</p></Link>
             </div>
            </div>
            <div className= "column">
@@ -25,7 +26,7 @@ const Landing = () => {
                <h3>
                   My Work
                </h3>
-               <p>Check out some of my projects!</p>
+               <Link to= '/mywork'><p>Check out some of my projects!</p></Link>
             </div>
            </div>
            <div className= "column">
@@ -33,7 +34,7 @@ const Landing = () => {
                <h3>
                   Contact Me
                </h3>
-               <p>Click here to contact</p>
+               <Link to ='/contact'><p>Click here to contact</p></Link>
             </div>
            </div>
         </div>
