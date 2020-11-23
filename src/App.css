@@ -26,6 +26,7 @@ body {
 a {
   color: var(--primary-color);
   text-decoration: none;
+  flex-direction: column;
 }
 
 a:hover {
@@ -37,7 +38,12 @@ ul {
 }
 
 img {
-  width: 100%;
+  width: 300px;
+  height: 300px;
+}
+.bio-image {
+  float: left;
+  padding: 15px;
 }
 
 /* Utilities */
@@ -125,77 +131,6 @@ img {
   padding-bottom: 0.3rem;
 }
 
-/* Padding */
-.p {
-  padding: 0.5rem;
-}
-.p-1 {
-  padding: 1rem;
-}
-.p-2 {
-  padding: 2rem;
-}
-.p-3 {
-  padding: 3rem;
-}
-.py {
-  padding: 0.5rem 0;
-}
-.py-1 {
-  padding: 1rem 0;
-}
-.py-2 {
-  padding: 2rem 0;
-}
-.py-3 {
-  padding: 3rem 0;
-}
-
-/* Margin */
-.m {
-  margin: 0.5rem;
-}
-.m-1 {
-  margin: 1rem;
-}
-.m-2 {
-  margin: 2rem;
-}
-.m-3 {
-  margin: 3rem;
-}
-.my {
-  margin: 0.5rem 0;
-}
-.my-1 {
-  margin: 1rem 0;
-}
-.my-2 {
-  margin: 2rem 0;
-}
-.my-3 {
-  margin: 3rem 0;
-}
-
-/* Grid */
-.grid-2 {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 1rem;
-}
-
-.grid-3 {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 1rem;
-}
-
-.grid-4 {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-gap: 1rem;
-}
-
 .btn {
   display: inline-block;
   background: var(--light-color);
@@ -226,16 +161,6 @@ img {
   margin-right: 0.2rem;
 }
 
-.badge {
-  display: inline-block;
-  font-size: 0.8rem;
-  padding: 0.2rem 0.7rem;
-  text-align: center;
-  margin: 0.3rem;
-  background: var(--light-color);
-  color: #333;
-  border-radius: 5px;
-}
 
 .alert {
   padding: 0.7rem;
@@ -267,6 +192,7 @@ img {
 .alert-dark {
   background: var(--dark-color);
   color: #fff;
+  padding: 5px;
 }
 
 .btn-danger,

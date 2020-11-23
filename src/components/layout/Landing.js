@@ -37,6 +37,17 @@ const Landing = () => {
                <Link to ='/contact'><p>Click here to contact</p></Link>
             </div>
            </div>
+           <div className= "column">
+            <div className ="card">
+               <h3>Stalk Me Here</h3>
+               <div>
+                  <ul>
+                  <li><a href="https://github.com/Enrique303"><i class = "fab fa-github"></i></a></li>
+                  <li><a href="https://www.linkedin.com/in/enrique-lopez-30552519a/"><i class = "fab fa-linkedin"></i></a></li>
+                  </ul>
+               </div>
+            </div>
+           </div>
         </div>
       </div>
     </section>
