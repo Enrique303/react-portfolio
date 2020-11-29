@@ -4,7 +4,7 @@
 :root {
   --primary-color: #464650;
   --dark-color: #333333;
-  --light-color: #f4f4f4;
+  --light-color: #2e7d95;
   --danger-color: #dc3545;
   --success-color: #28a745;
 }
@@ -59,6 +59,7 @@ img {
   font-size: 4rem;
   line-height: 1.2;
   margin-bottom: 1rem;
+  text-align: center;
 }
 
 .large {
@@ -68,6 +69,11 @@ img {
 }
 
 .lead {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+.lead-am {
   font-size: 1.5rem;
   margin-bottom: 1rem;
 }
@@ -120,6 +126,21 @@ img {
   padding: 1rem;
   border: #ccc 1px dotted;
   margin: 0.7rem 0;
+}
+.row {
+  display: flex;
+  justify-content: space-evenly;
+}
+.column {
+  display: flex;
+  width: 300px;
+}
+.stalk {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.7rem 2rem;
+  width: 100%;
 }
 
 /* List */
@@ -302,6 +323,17 @@ table th {
   margin-right: 0.6rem;
 }
 
+.page-footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.footer-copyright {
+  text-align: center;
+}
+
 /* Mobile Styles */
 @media (max-width: 700px) {
   .hide-sm {
@@ -336,5 +368,11 @@ table th {
   .navbar ul {
     text-align: center;
     justify-content: center;
+  }
+
+  .row {
+    text-align: center;
+    justify-content: center;
+    flex-flow: column wrap;
   }
 }

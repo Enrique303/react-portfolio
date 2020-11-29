@@ -9,15 +9,15 @@ import Contact from './components/layout/Contact';
 import MyWork from './components/layout/MyWork';
 
 const App = () => {
-  return(
+  return (
     <Router>
       <Fragment>
         <Navbar />
-        <Route exact path ="/" component = { Landing } />
         <Switch>
-          < Route exact path ="/about" component = { About }/>
-          < Route exact path ="/contact" component = { Contact }/>
-          < Route exact path ="/mywork" component = { MyWork }/>
+          <Route exact path="/" component={Landing} />
+          <Route exact path="/about" component={About} />
+          <Route exact path="/contact" component={Contact} />
+          <Route exact path="/mywork" component={MyWork} />
         </Switch>
         <Footer />
       </Fragment>
